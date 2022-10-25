@@ -1,3 +1,5 @@
+"use strict";
+
 async function loading() {
     fetch(apiaddress)
     .then((res) => {
