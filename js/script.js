@@ -4,7 +4,9 @@ async function loading() {
     fetch(apiaddress)
     .then((res) => {
     if (res.status == 200) {
-    /* Le status-code 200 de la rÃ©ponse (res) correspond Ã  une requÃªte correctement exÃ©cutÃ©e (c'est ce qu'on attend ici) */
+        var response = fetch(url)
+        var data = response.json()
+        console.log(data);/* Le status-code 200 de la rÃ©ponse (res) correspond Ã  une requÃªte correctement exÃ©cutÃ©e (c'est ce qu'on attend ici) */
     return res.json(); /* RÃ©cupÃ©ration des articles depuis l'API au format json */
     }
     })
