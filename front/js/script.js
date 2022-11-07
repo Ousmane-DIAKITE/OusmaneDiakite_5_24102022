@@ -14,7 +14,8 @@ fetch("http://localhost:3000/api/products/")
 
  var element = document.createElement('a');
  let anchor = document.createElement('a');
- anchor.href = 
+ anchor.href = "http://localhost:3000/images/kanap01.jpeg";
+ const itmes = document.querySelector("items")
 
 
 
