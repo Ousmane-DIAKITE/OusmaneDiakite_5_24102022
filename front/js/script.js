@@ -18,6 +18,8 @@ function getArticle () {
     for (let i = 0; i < donnees.length; i++) {
         const canape = donnes[i];
     }
+    // Création de l'élément "a"
+    var linkproduct = document.createElement('a');
     
 
 }
