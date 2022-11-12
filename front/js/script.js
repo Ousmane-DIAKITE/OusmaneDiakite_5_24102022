@@ -15,8 +15,8 @@ function getArticle () {
     });
 }
  function addProducts(donnees) {
-    for (let i = 0; index < donnees.length; i++) {
-        const canape = donnes[index];
+    for (let i = 0; i < donnees.length; i++) {
+        const canape = donnes[i];
         
     }
 
