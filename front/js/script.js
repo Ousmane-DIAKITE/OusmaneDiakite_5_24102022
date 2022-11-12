@@ -17,8 +17,8 @@ function getArticle () {
  function addProducts(donnees) {
     for (let i = 0; i < donnees.length; i++) {
         const canape = donnes[i];
-        
     }
+    
 
 }
 
