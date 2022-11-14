@@ -1,7 +1,6 @@
 "use strict";
 
-function getArticle () {
-    
+function getArticle () { 
 
     fetch("http://localhost:3000/api/products/")
     .then(function(res) { 
@@ -16,14 +15,15 @@ function getArticle () {
 }
  function addProducts(donnees) {
     for (let i = 0; i < donnees.length; i++) {
-        const canape = donnes[i];
+        const canape = donnees[i];
     }
     // Création de l'élément "a"
     var linkproduct = document.createElement('a');
-    
+    linkproduct.href = "./addProducts.html,id=" + donnees[i]._id
+    document.getElementById("items").append(linkproduct);
 
 }
 
-// On apelle notre fonction
-getArticle();
+
+
     
