@@ -15,3 +15,12 @@ function getArticle() {
         console.log('Ca marche pas');
     });
 }
+
+function name(params) {
+    
+}
+
+
+function name(params) {
+    
+}
