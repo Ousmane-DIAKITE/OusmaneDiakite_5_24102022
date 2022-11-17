@@ -1,8 +1,10 @@
 "use strict"
 
-function name(params) {
-    
-}
+(async function () {
+    const articleId = getArticleId
+    const article = getArticle(articleId)
+    hydrateArticle()
+})()
 
 function getArticle() {
     fetch("http://localhost:3000/api/products")

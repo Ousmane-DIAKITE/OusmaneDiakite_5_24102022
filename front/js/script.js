@@ -24,6 +24,7 @@ function addProducts(donnees) {
     // Création de l'élément "article"
     let productArticle = document.createElement("article");
     linkProduct.appendChild(productArticle);
+    
   
     // Création de l'élément "img"
     let productImg = document.createElement("img");
