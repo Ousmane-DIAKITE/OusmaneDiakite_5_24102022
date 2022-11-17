@@ -16,11 +16,11 @@ function getArticle() {
     });
 }
 
-function name(params) {
+function getArticle() {
     
 }
 
 
-function name(params) {
+function getArticleId() {
     
 }
