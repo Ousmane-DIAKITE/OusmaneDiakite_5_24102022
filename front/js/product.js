@@ -16,7 +16,7 @@ function getProduct() {
   // Ajout de la liste des produits
 function listProduct (allCanape) {
     for (let i=0; i < allCanape.length; i++) {
-        const canape = allCanape[i];
+
     }
 
 }
