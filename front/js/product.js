@@ -1,7 +1,8 @@
 "use strict"
-
+// récupération de la chaine de requête dans l'url
 const queryString_url_id = window.location.search;
 const urlSearchParams = new urlSearchParams(queryString_url_id);
+const Id = urlSearchParams.get('leId');
 getProduct();
 
 function getProduct() {  
