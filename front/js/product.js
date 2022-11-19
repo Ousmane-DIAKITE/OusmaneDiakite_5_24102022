@@ -1,5 +1,6 @@
 "use strict"
 
+const querySring_url_id = window.location.search;
 
 getProduct();
 
