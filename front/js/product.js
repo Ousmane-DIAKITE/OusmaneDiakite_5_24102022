@@ -8,11 +8,11 @@ function getProduct() {
     .then((res) => res.json())
     .then((data) => { 
         console.log(data)})
-
-  
     .catch((err) => {
         console.log('Ca marche pas');
     });
 }
 
-
+function listProduct (allCanape) {
+    
+}
