@@ -1,7 +1,7 @@
 "use strict"
 
-const querySring_url_id = window.location.search;
-
+const queryString_url_id = window.location.search;
+const urlSearchParams = new urlSearchParams(queryString_url_id);
 getProduct();
 
 function getProduct() {  
