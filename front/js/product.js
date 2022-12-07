@@ -22,6 +22,8 @@ function getProduct() {
     const sofa = data[i];
 
     let divImg = document.createElement("item__img");
+    let  divItemImg  =  document . getElementById ( "item__img" ) ;
+    divItemImg . appendChild ( productImg ) ;
 
     let productImg = document.createElement("img");
     productImg.src = sofa.imageURL;
@@ -32,3 +34,5 @@ function getProduct() {
  }
 
 getProduct();
+
+displayProduct();
