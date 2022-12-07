@@ -1,35 +1,34 @@
 "use strict"
 
-getProduct();
+let params = (new URL(document.location)).searchParams;
+console.log(params);
+let id = params.get("id");
+console.log(id);
+
 
 function getProduct() {  
-    fetch("http://localhost:3000/api/products/")
+    fetch("http://localhost:3000/api/products/" + id)
     .then((res) => res.json())
     .then((data) => { 
-        ((data) => listProduct(data)) 
+        ((data) => displayProduct(data)) 
         console.log(data)})
     .catch((err) => {
         console.log('Ca marche pas');
 
     });
 }
-  // Ajout de la liste des produits
-function listProduct (allCanape) {
+ function displayProduct(product) {
 
-    // récupération de la chaine de requête dans l'url
-const queryString_url_id = window.location.search;
-const urlSearchParams = new urlSearchParams(queryString_url_id);
-const id = urlSearchParams.get('id');
-console.log(id);
-
-    for (let i=0; i < allCanape.length; i++) {
+    const sofa = data[i];
 
     
 
+    let productImg = document.createElement("item__img");
+    productImg.src = sofa.imageURL;
+    productImg.src = sofa.altTxt;
 
-   
-        
-    }
 
+    
+ }
 
-}
+getProduct();
