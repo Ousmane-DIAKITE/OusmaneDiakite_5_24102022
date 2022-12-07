@@ -21,9 +21,9 @@ function getProduct() {
 
     const sofa = data[i];
 
-    
+    let divImg = document.createElement("item__img");
 
-    let productImg = document.createElement("item__img");
+    let productImg = document.createElement("img");
     productImg.src = sofa.imageURL;
     productImg.src = sofa.altTxt;
 
