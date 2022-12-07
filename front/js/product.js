@@ -19,16 +19,8 @@ function getProduct() {
 }
  function displayProduct(product) {
 
+    const divItemImg = document.querySelector("item__img");
     
-
-    
-    let divImg = document.getElementById("item__img");
-    
-
-    let productImg = document.createElement("img");
-    productImg.src = sofa.imageURL;
-    productImg.src = sofa.altTxt;
-    divImg.appendChild(productImg);
 
 
     
