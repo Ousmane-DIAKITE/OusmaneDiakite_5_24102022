@@ -30,6 +30,8 @@ function getProduct() {
 
     const productPrice = document.querySelector("price");
     productPrice = product.price;
+
+    console.log(price);
   
 
 
