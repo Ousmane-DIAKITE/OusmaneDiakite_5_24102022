@@ -27,6 +27,9 @@ function getProduct() {
 
     const productTitle = document.querySelector("title");
     productTitle = product.name;
+
+    const productPrice = document.querySelector("price");
+    productPrice = product.price;
   
 
 
