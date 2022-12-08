@@ -21,9 +21,15 @@ function getProduct() {
 
     const divItemImg = document.querySelector("item__img");
     let productImg = document.createElement("img");
-    productImg.src = sofa.imageUrl;  
-    productImg.alt = sofa.altTxt;
-    divItemImg.appendChild(productImg);
+    productImg.src = product.imageUrl;  
+    productImg.alt = product.altTxt;
+    productArticle.appendChild(productImg);
+
+    const productTitle = document.querySelector("title");
+    productTitle = product.name;
+  
+
+
   
     
 
@@ -33,4 +39,3 @@ function getProduct() {
 
 getProduct();
 
-displayProduct();
