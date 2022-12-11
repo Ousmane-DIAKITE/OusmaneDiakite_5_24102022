@@ -23,7 +23,7 @@ function getProduct() {
     let productImg = document.createElement("img");
     productImg.src = product.imageUrl;  
     productImg.alt = product.altTxt;
-    productArticle.appendChild(productImg);
+    divItemImg.appendChild(productImg);
 
     const productTitle = document.querySelector("title");
     productTitle = product.name;
