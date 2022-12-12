@@ -8,39 +8,30 @@ console.log(id);
 
 function getProduct() {  
     fetch("http://localhost:3000/api/products/" + id)
-    .then((res) => res.json())
-    .then((data) => { 
-        ((data) => displayProduct(data)) 
-        console.log(data)})
-    .catch((err) => {
-        console.log('Ca marche pas');
-
-    });
+    .then(response => response.json())
+    .then((product) => displayProduct(product)) 
+    .catch((error) => console.log(error)) 
 }
  function displayProduct(product) {
 
-    const divItemImg = document.querySelector("item__img");
+console.log(displayProduct);
+
     let productImg = document.createElement("img");
-    productImg.src = product.imageUrl;  
-    productImg.alt = product.altTxt;
-    divItemImg.appendChild(productImg);
+    const divItemImg = document.querySelector(".item__img");
+    const productImageUrl = product.imageUrl;
+    const ProductAltTxt = product.altTxt;
 
-    const productTitle = document.querySelector("title");
-    productTitle = product.name;
-
-    const productPrice = document.querySelector("price");
-    productPrice = product.price;
-
-    const productDescription = document.querySelector("description");
-    productDescription = product.description;
+    const productPrice = document.querySelector(".price");
+    productPrice.textContent = product.price;
 
 
-  
+    const productDescription = document.querySelector(".description");
+    productDescription.textContent = product.description;
     
-
-
+    const productColor = product;
     
  }
+
 
 getProduct();
 
