@@ -32,6 +32,12 @@ function getProduct() {
     let productPrice = document.getElementById("price");
     productPrice.innerText = product.price;
 
+    // Création de l'élément "prix"
+    let productDescription = document.getElementById("description");
+    productDescription.innerText = product.description;
+
+
+
 
 
 
