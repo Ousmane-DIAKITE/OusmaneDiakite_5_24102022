@@ -28,7 +28,9 @@ function getProduct() {
     let productTitle = document.getElementById("title");
     productTitle.innerText = product.name;
 
-    // Création de l'élément "titre"
+    // Création de l'élément "prix"
+    let productPrice = document.getElementById("price");
+    productPrice.innerText = product.price;
 
 
 
