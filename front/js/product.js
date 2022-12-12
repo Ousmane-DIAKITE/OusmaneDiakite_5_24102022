@@ -14,21 +14,8 @@ function getProduct() {
 }
  function displayProduct(product) {
 
-console.log(displayProduct);
-
-    let productImg = document.createElement("img");
     const divItemImg = document.querySelector(".item__img");
-    const productImageUrl = product.imageUrl;
-    const ProductAltTxt = product.altTxt;
-
-    const productPrice = document.querySelector(".price");
-    productPrice.textContent = product.price;
-
-
-    const productDescription = document.querySelector(".description");
-    productDescription.textContent = product.description;
     
-    const productColor = product;
     
  }
 
