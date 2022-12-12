@@ -37,16 +37,15 @@ function getProduct() {
     productDescription.innerText = product.description;
 
     // Appel les éléments "colors"
-    getColors(product);
+    getAllColors();
+
 
  }
 
-// Création de la Fonction GetColors pour afficher les option de couleur dans l'élément html dans le DOM
- function getColors(product) {
+ function getAllColors() {
+    let selecColors = document.getElementById("colors");
+    console.log(selecColors);
 
-    
-
-    
  }
 
 
