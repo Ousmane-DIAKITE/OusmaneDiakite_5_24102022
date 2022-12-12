@@ -48,7 +48,10 @@ function getProduct() {
     for (let i = 0; i < colors.length; i++) {
         let optionColors = document.createElement("option");
         console.log(optionColors);
-        productColors.value = colors[i];
+        optionColors.value = colors[i];
+        optionColors.innerText = colors[i];
+        selectColors.appendChild(optionColors);
+        
 
         
         
