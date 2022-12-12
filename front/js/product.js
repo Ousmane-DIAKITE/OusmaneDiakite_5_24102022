@@ -37,14 +37,26 @@ function getProduct() {
     productDescription.innerText = product.description;
 
     // Appel les éléments "colors"
-    getAllColors();
+    getAllColors(product.colors);
 
 
  }
 
- function getAllColors() {
-    let selecColors = document.getElementById("colors");
-    console.log(selecColors);
+ function getAllColors(colors) {
+    
+    let selectColors = document.getElementById("colors");
+    for (let i = 0; i < colors.length; i++) {
+        let optionColors = document.createElement("option");
+        console.log(optionColors);
+        productColors.value = colors[i];
+
+        
+        
+   
+    }
+    
+
+
 
  }
 
