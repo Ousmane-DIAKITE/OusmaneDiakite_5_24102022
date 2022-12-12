@@ -14,9 +14,12 @@ function getProduct() {
 }
  function displayProduct(product) {
 
+    
+    const productImg = document.createElement("img")
+    productImg.src = product.imageUrl;  
+    productImg.alt = product.altTxt;
     const divItemImg = document.querySelector(".item__img");
-    
-    
+    divItemImg.appendChild(productImg);
  }
 
 
