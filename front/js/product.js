@@ -36,23 +36,12 @@ function getProduct() {
     let productDescription = document.getElementById("description");
     productDescription.innerText = product.description;
 
-    // Création de l'élément "color"
-    let productColor = document.getElementById("colors");
-    console.log(colors);
-
-
-
-
-
-
-
-
-
-
-
-
+    // Appel les éléments "colors"
+    getColors(product);
 
  }
+
+
 
 
 getProduct();
