@@ -38,7 +38,7 @@ function getProduct() {
 
     // Création de l'élément "color"
     let productColor = document.getElementById("colors");
-    
+    console.log(colors);
 
 
 
