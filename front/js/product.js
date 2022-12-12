@@ -41,6 +41,13 @@ function getProduct() {
 
  }
 
+// Création de la Fonction GetColors pour afficher les option de couleur dans l'élément html dans le DOM
+ function getColors(product) {
+
+    
+
+    
+ }
 
 
 
