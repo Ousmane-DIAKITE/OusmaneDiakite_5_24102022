@@ -42,6 +42,7 @@ function getProduct() {
 
  }
 
+ // Création de la Fonction GetAllColors pour afficher les couleurs des élément html dans le DOM
  function getAllColors(colors) {
     
     let selectColors = document.getElementById("colors");
@@ -50,17 +51,10 @@ function getProduct() {
         console.log(optionColors);
         optionColors.value = colors[i];
         optionColors.innerText = colors[i];
-        selectColors.appendChild(optionColors);
-        
-
-        
-        
+        selectColors.appendChild(optionColors); 
    
     }
     
-
-
-
  }
 
 
