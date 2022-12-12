@@ -18,11 +18,20 @@ function getProduct() {
  function displayProduct(product) {
 
     // Création de l'élément "img"
-    const productImg = document.createElement("img")
+    let productImg = document.createElement("img")
     productImg.src = product.imageUrl;  
     productImg.alt = product.altTxt;
-    const divItemImg = document.querySelector(".item__img");
+   let divItemImg = document.querySelector(".item__img");
     divItemImg.appendChild(productImg);
+
+    // Création de l'élément "titre"
+    let productTitle = document.getElementById("title");
+    productTitle.innerText = product.name;
+
+    // Création de l'élément "titre"
+
+
+
 
 
 
