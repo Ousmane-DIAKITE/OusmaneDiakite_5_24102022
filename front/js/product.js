@@ -4,7 +4,7 @@
 let params = (new URL(document.location)).searchParams;
 console.log(params);
 let id = params.get("id");
-console.log(id);
+//console.log(id);
 
 //Création de la Fonction GetProduct pour récupérer les données des produits en utilisant un fetch
 function getProduct() {  
@@ -59,10 +59,18 @@ function getProduct() {
 const button = document.querySelector(".item__content__addButton");
 console.log(button);
 button.addEventListener("click", (e) => {
+    idSelectProduct = (id);
+    let title = document.querySelector("tilte");
     let colors = document.querySelector(".value").value;
     let quantity = document.querySelector(".quantity").value;
     console.log(colors);
     console.log(quantity);
+    console.log(idSeclectProduct);
+    console.log(title);
+//Création du localstorage
+localStorag.setTime(() => {
+    
+}, timeout);
 })
 
 
