@@ -39,7 +39,6 @@ function getProduct() {
     // Appel les éléments "colors"
     getAllColors(product.colors);
 
-
  }
 
  // Création de la Fonction GetAllColors pour afficher les couleurs des élément html dans le DOM
@@ -54,9 +53,11 @@ function getProduct() {
         selectColors.appendChild(optionColors); 
    
     }
-    
  }
 
+//Création de l'élément bouton "Ajouter au panier"
+const button = document.querySelector(".item__content__addButton");
+console.log(button);
 
 
 getProduct();
