@@ -58,6 +58,12 @@ function getProduct() {
 //Création de l'élément bouton "Ajouter au panier"
 const button = document.querySelector(".item__content__addButton");
 console.log(button);
+button.addEventListener("click", (e) => {
+    let colors = document.querySelector(".value").value;
+    let quantity = document.querySelector(".quantity").value;
+    console.log(colors);
+    console.log(quantity);
+})
 
 
 getProduct();
