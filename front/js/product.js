@@ -82,6 +82,7 @@ function addToBasket() {
 
         if (product.id === basket[i].id && product.colors === basket[i].colors) {
             basket[i].quantity = Number(basket[i].quantity) + Number(product.quantity);
+            
             isPresent = true;
   
         } 
@@ -94,8 +95,12 @@ function addToBasket() {
 
     localStorage.setItem("basket", JSON.stringify(basket));
 
+    popupConfirm(veritation);
    
 }
+
+
+
 
 //Création de l'élément bouton "Ajouter au panier"
 const button = document.querySelector(".item__content__addButton");
