@@ -47,31 +47,43 @@ function getProduct() {
     let selectColors = document.getElementById("colors");
     for (let i = 0; i < colors.length; i++) {
         let optionColors = document.createElement("option");
-        console.log(optionColors);
+        //console.log(optionColors);
         optionColors.value = colors[i];
         optionColors.innerText = colors[i];
         selectColors.appendChild(optionColors); 
    
     }
  }
+function addToBasket() {
+    let colors = document.getElementById("colors").value;
+    let quantity = document.getElementById("quantity").value;
+
+    let product = {
+        "id": id,
+        "colors": colors,
+        "quantity": quantity
+
+    }
+    if (localStorage.getItem("basket") === null) {
+        localStorage.setItem("basket", "[]")
+
+    }
+     else {
+        return addToBasket
+    }
+    let basket = localStorage.getItem("basket");
+    basket = JSON.parse(basket);
+    basket.push(product);
+    localStorage.setItem("basket", JSON.stringify(basket));
+
+   
+}
 
 //Création de l'élément bouton "Ajouter au panier"
 const button = document.querySelector(".item__content__addButton");
 console.log(button);
-button.addEventListener("click", (e) => {
-    idSelectProduct = (id);
-    let title = document.querySelector("tilte");
-    let colors = document.querySelector(".value").value;
-    let quantity = document.querySelector(".quantity").value;
-    console.log(colors);
-    console.log(quantity);
-    console.log(idSeclectProduct);
-    console.log(title);
-//Création du localstorage
-localStorag.setTime(() => {
-    
-}, timeout);
-})
+button.addEventListener("click",addToBasket);
+
 
 
 getProduct();
