@@ -58,6 +58,8 @@ function addToBasket() {
     let colors = document.getElementById("colors").value;
     let quantity = document.getElementById("quantity").value;
 
+    quantity = (quantity <= 0) ? quantity = 1 : quantity = quantity;
+
     let product = {
         "id": id,
         "colors": colors,
@@ -68,12 +70,28 @@ function addToBasket() {
         localStorage.setItem("basket", "[]")
 
     }
-     else {
-        return addToBasket
-    }
+  
     let basket = localStorage.getItem("basket");
     basket = JSON.parse(basket);
-    basket.push(product);
+
+    let isPresent = false;
+     
+
+    for (let i = 0; i < basket.length; i++) {
+
+
+        if (product.id === basket[i].id && product.colors === basket[i].colors) {
+            basket[i].quantity = Number(basket[i].quantity) + Number(product.quantity);
+            isPresent = true;
+  
+        } 
+    }
+
+    if (!isPresent) {
+        basket.push(product);
+        
+    }
+
     localStorage.setItem("basket", JSON.stringify(basket));
 
    
