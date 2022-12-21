@@ -59,18 +59,19 @@ function addToBasket() {
     // Sélectionner les Valeurs des éléments Quantité et Colors 
     let colors = document.getElementById("colors").value;
     let quantity = document.getElementById("quantity").value;
-
+    // (si la Quantité est inférieur ou égal à 0 la Quantité est égal à 1)
     quantity = (quantity <= 0) ? quantity = 1 : quantity = quantity;
-
+    //Objet Produit
     let product = {
         "id": id,
         "colors": colors,
         "quantity": quantity
 
     }
+    //Création du If pour sauvegarder le panier
     if (localStorage.getItem("basket") === null) {
         localStorage.setItem("basket", "[]")
-
+        //Si le LocalStorage est vide, on crée un tableau vide
     }
   
     let basket = localStorage.getItem("basket");
