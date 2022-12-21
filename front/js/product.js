@@ -56,7 +56,7 @@ function getProduct() {
  }
  // Création de la Fonction pour rajouter nos produits dans le localStorage
 function addToBasket() {
-    
+
     if(checkQuantityColors(quantity, colors)) {
         let sofa = {
             "id": id,
@@ -113,12 +113,7 @@ function addToBasket() {
 }
 
 // Création de la Fonction CehckQuantity pour vérifier si les couleurs et la quantité sont renseigner  
-function checkQuantityColors(quantity, colors) {
-
-    if(quantity <= 0) {
-        alert("Veuillez renseigner la quantité.");
-        return false;
-    }
+function checkColors(colors) {
 
     if (colors == "") {
         alert("Veuillez renseigner la couleur.")
