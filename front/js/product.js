@@ -58,7 +58,7 @@ function addToBasket() {
     let colors = document.getElementById("colors").value;
     let quantity = document.getElementById("quantity").value;
 
-     quantity =  quantity + quantity;
+    quantity = (quantity <= 0) ? quantity = 1 : quantity = quantity;
 
     let product = {
         "id": id,
@@ -82,7 +82,7 @@ function addToBasket() {
 
         if (product.id === basket[i].id && product.colors === basket[i].colors) {
             basket[i].quantity = Number(basket[i].quantity) + Number(product.quantity);
-            alert("Votre Article a bien été ajouté.");
+            
             isPresent = true;
   
         } 
@@ -93,14 +93,16 @@ function addToBasket() {
         
     }
     if(checkQuantityColors(quantity, colors)) {
-        let product = {
+        let sofa = {
             "id": id,
             "colors": colors,
             "quantity": quantity
     
         }
+        alert("Votre Article a bien été ajouté.");
     }
 
+    
  
 
     localStorage.setItem("basket", JSON.stringify(basket));
