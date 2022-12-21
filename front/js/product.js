@@ -81,8 +81,6 @@ function addToBasket() {
      
 
     for (let i = 0; i < basket.length; i++) {
-
-
         if (product.id === basket[i].id && product.colors === basket[i].colors) {
             basket[i].quantity = Number(basket[i].quantity) + Number(product.quantity);
             
@@ -112,7 +110,7 @@ function addToBasket() {
    
 }
 
-    
+// Création de la Fonction CehckQuantity pour vérifier si les couleurs et la quantité sont renseigner  
 function checkQuantityColors(quantity, colors) {
 
     if(quantity <= 0) {
