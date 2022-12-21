@@ -73,7 +73,7 @@ function addToBasket() {
         localStorage.setItem("basket", "[]")
         //Si le LocalStorage est vide, on crée un tableau vide
     }
-  
+    //Si tout est OK, on envoie le panier au LocalStorage
     let basket = localStorage.getItem("basket");
     basket = JSON.parse(basket);
 
