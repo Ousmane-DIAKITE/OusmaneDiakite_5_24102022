@@ -94,11 +94,17 @@ function addToBasket() {
     }
 
     localStorage.setItem("basket", JSON.stringify(basket));
-
-    popupConfirm(veritation);
    
 }
 
+function checkValidation() {
+    let idColors = document.querySelector('.colors');
+    
+    
+    
+
+    
+}
 
 
 
