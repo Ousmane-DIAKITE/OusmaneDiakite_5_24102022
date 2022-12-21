@@ -56,19 +56,16 @@ function getProduct() {
  }
  // Création de la Fonction pour rajouter nos produits dans le localStorage
 function addToBasket() {
-
-    if(checkQuantityColors(quantity, colors)) {
-        let sofa = {
-            "id": id,
-            "colors": colors,
-            "quantity": quantity
-    
-        }
-        alert("Votre Article a bien été ajouté.");
-    }
     // Sélectionner les Valeurs des éléments Quantité et Colors 
     let colors = document.getElementById("colors").value;
+
     let quantity = document.getElementById("quantity").value;
+    if(checkColors(colors)) {
+        let sofa = {
+            "colors": colors,
+        }
+    }
+
     // (si la Quantité est inférieur ou égal à 0 la Quantité est égal à 1)
     quantity = (quantity <= 0) ? quantity = 1 : quantity = quantity;
     //Objet Produit
@@ -95,7 +92,7 @@ function addToBasket() {
             basket[i].quantity = Number(basket[i].quantity) + Number(product.quantity);
             
             isPresent = true;
-  
+            alert("Votre Article a bien été ajouté.");
         } 
     }
 
