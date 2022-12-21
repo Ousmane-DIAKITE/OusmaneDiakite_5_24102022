@@ -56,6 +56,16 @@ function getProduct() {
  }
  // Création de la Fonction pour rajouter nos produits dans le localStorage
 function addToBasket() {
+    
+    if(checkQuantityColors(quantity, colors)) {
+        let sofa = {
+            "id": id,
+            "colors": colors,
+            "quantity": quantity
+    
+        }
+        alert("Votre Article a bien été ajouté.");
+    }
     // Sélectionner les Valeurs des éléments Quantité et Colors 
     let colors = document.getElementById("colors").value;
     let quantity = document.getElementById("quantity").value;
@@ -93,15 +103,7 @@ function addToBasket() {
         basket.push(product);
         
     }
-    if(checkQuantityColors(quantity, colors)) {
-        let sofa = {
-            "id": id,
-            "colors": colors,
-            "quantity": quantity
-    
-        }
-        alert("Votre Article a bien été ajouté.");
-    }
+
 
     
  
