@@ -132,5 +132,6 @@ button.addEventListener("click",addToBasket);
 
 
 
+
 getProduct();
 
