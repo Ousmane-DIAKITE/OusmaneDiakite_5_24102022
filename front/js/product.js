@@ -99,6 +99,9 @@ function addToBasket() {
 
 function checkValidation() {
     let idColors = document.querySelector('.colors');
+    console.log(idColors);
+    let optionColors = idColors.value;
+    console.log(optionColors);
     
     
     
