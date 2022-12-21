@@ -43,8 +43,9 @@ function getProduct() {
 
  // Création de la Fonction GetAllColors pour afficher les couleurs des élément html dans le DOM
  function getAllColors(colors) {
-    // Création de la boucle pour récupérer  toutes les couleurs 
+    // Selectionner l'élément colors 
     let selectColors = document.getElementById("colors");
+    // Création de la boucle pour récupérer  toutes les couleurs 
     for (let i = 0; i < colors.length; i++) {
         let optionColors = document.createElement("option");
         optionColors.value = colors[i];
@@ -53,7 +54,9 @@ function getProduct() {
    
     }
  }
+ // Création de la Fonction pour rajouter nos produits dans le localStorage
 function addToBasket() {
+    // Sélectionner les Valeurs des éléments Quantité et Colors 
     let colors = document.getElementById("colors").value;
     let quantity = document.getElementById("quantity").value;
 
