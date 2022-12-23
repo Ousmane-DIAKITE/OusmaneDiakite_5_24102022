@@ -7,10 +7,12 @@ async function getProductById (idProduct){
  }
 
 // Données du Localstorage
-async function getProductById (idProduct){
+ function getProductById (idProduct){
     let basket = localStorage.getItem("basket");
     basket = JSON.parse(basket);
     console.log(basket);
+    let sectionItem = document.getElementById("cart__items");
+    console.log(sectionItem);
  }
  
 getProductById();
