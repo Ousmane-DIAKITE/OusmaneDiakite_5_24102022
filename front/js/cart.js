@@ -11,6 +11,7 @@ async function getProductById (idProduct){
     let basket = localStorage.getItem("basket");
     console.log(basket);
     if (basket == null ) {
+        return [];
         
     } else {
         
