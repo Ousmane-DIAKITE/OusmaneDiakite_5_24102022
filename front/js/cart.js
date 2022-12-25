@@ -18,5 +18,8 @@ async function getProductById (idProduct){
     }
  }
  
+ function displayAllBasket() {
+
+ }
 getBasket();
 
