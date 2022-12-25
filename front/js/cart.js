@@ -20,6 +20,7 @@ async function getProductById (idProduct){
  
  function displayAllBasket() {
     let basket = getBasket();
+    let foundProduct = basket.find(p => p.id == product.id);
 
  }
 getBasket();
