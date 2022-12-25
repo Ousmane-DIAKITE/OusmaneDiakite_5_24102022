@@ -21,7 +21,7 @@ function getProduct() {
     let productImg = document.createElement("img")
     productImg.src = product.imageUrl;  
     productImg.alt = product.altTxt;
-   let divItemImg = document.querySelector(".item__img");
+    let divItemImg = document.querySelector(".item__img");
     divItemImg.appendChild(productImg);
 
     // Création de l'élément "titre"
