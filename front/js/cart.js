@@ -7,9 +7,8 @@ async function getProductById (idProduct){
  }
 
 // Données du Localstorage
- function getBasket (idProduct){
+ function getBasket (){
     let basket = localStorage.getItem("basket");
-    console.log(basket);
     if (basket == null ) {
         return [];
         
@@ -21,7 +20,14 @@ async function getProductById (idProduct){
  function displayAllBasket() {
     let basket = getBasket();
     let foundProduct = basket.find(p => p.id == product.id);
-
+    if (foundProduct != undefined) {
+        foundProduct.quantity++;
+        console.log(foundProduct);
+    } else {
+        foundProduct = 1;
+        basket.push(basket);
+    }
+    
  }
 getBasket();
 
