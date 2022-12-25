@@ -19,6 +19,7 @@ async function getProductById (idProduct){
  }
  
  function displayAllBasket() {
+    let basket = getBasket();
 
  }
 getBasket();
