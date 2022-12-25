@@ -10,6 +10,11 @@ async function getProductById (idProduct){
  function getBasket (idProduct){
     let basket = localStorage.getItem("basket");
     console.log(basket);
+    if (basket == null ) {
+        
+    } else {
+        
+    }
  }
  
 getBasket();
