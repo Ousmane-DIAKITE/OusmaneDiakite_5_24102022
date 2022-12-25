@@ -14,7 +14,7 @@ async function getProductById (idProduct){
         return [];
         
     } else {
-        
+        return JSON.parse(basket);
     }
  }
  
