@@ -9,6 +9,7 @@ async function getProductById (idProduct){
 // Données du Localstorage
  function getBasket (idProduct){
     let basket = localStorage.getItem("basket");
+    console.log(basket);
  }
  
 getBasket();
