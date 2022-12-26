@@ -2,35 +2,20 @@
 
 
 // Données du Localstorage
- function getBasket (){
+ function getBasket() {
     let basket = localStorage.getItem("basket");
+    basket = JSON.parse(basket);
+    console.log(basket);
     if (basket == null ) {
         return [];
         
-    } else {
-        return JSON.parse(basket);
     }
+    
  }
+ function displayItem(item) {
+    
+ }
+
  
- function addBasket() {
-    let basket = getBasket();
-    let foundProduct = basket.find(p => p.id == product.id);
-    if (foundProduct != undefined) {
-        foundProduct.quantity++;
-        console.log(foundProduct);
-    } else {
-        foundProduct = 1;
-        basket.push(basket);
-    }
-    
- }
-
- function removeFormBasket(product) {
-    let basket = getBasket;
-    basket = basket.filtre(p => p.id != product.id);
-
-
-    
- }
-getBasket();
+ getBasket();
 
