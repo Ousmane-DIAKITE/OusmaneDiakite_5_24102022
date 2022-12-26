@@ -21,7 +21,7 @@ function getProduct() {
     let productImg = document.createElement("img")
     productImg.src = product.imageUrl;  
     productImg.alt = product.altTxt;
-    let divItemImg = document.querySelector(".item__img");
+   let divItemImg = document.querySelector(".item__img");
     divItemImg.appendChild(productImg);
 
     // Création de l'élément "titre"
@@ -127,6 +127,8 @@ function checkColors(colors) {
 
 //Création de l'élément bouton "Ajouter au panier"
 const button = document.querySelector(".item__content__addButton");
+console.log('item__content__addButton');
+console.log(button);
 
 button.addEventListener("click",addToBasket);
 
