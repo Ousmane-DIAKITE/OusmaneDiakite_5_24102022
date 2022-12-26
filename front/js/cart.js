@@ -27,7 +27,7 @@
  }
 
  function makeArticle(item) {
-    
+    const article = document.createElement("article");
     
  }
  
