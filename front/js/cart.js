@@ -27,7 +27,8 @@
 
  function removeFormBasket(product) {
     let basket = getBasket;
-    
+    basket = basket.filtre(p => p.id != product.id);
+
 
     
  }
