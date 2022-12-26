@@ -1,5 +1,6 @@
 "use strict";
 
+
 // Données du Localstorage
  function getBasket (){
     let basket = localStorage.getItem("basket");

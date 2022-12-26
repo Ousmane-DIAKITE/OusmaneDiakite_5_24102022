@@ -58,7 +58,7 @@ function getProduct() {
 function addToBasket() {
     // Sélectionner les Valeurs des éléments Quantité et Colors 
     let colors = document.getElementById("colors").value;
-
+    console.log();
     let quantity = document.getElementById("quantity").value;
     if(checkColors(colors)) {
         let sofa = {
@@ -126,8 +126,9 @@ function checkColors(colors) {
 
 
 //Création de l'élément bouton "Ajouter au panier"
-const button = document.querySelector(".item__content__addButton");
-console.log('item__content__addButton');
+const button = document.querySelector("item__content__addButton");
+
+
 console.log(button);
 
 button.addEventListener("click",addToBasket);
