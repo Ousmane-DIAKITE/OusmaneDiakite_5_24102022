@@ -20,7 +20,11 @@
     article.appendChild(div)
     
  }
- 
+
+ function displayArticle(article) {
+    
+    
+ }
 
  
  getBasket();
