@@ -22,13 +22,13 @@
  }
 
  function displayArticle(article) {
-    document.querySelector("#cart__items").appendChild(article);
+    document.querySelector("#cart__item").appendChild(article);
     
  }
 
  function makeArticle(item) {
     const article = document.createElement("article");
-    
+    article.classList.add("cart__item");
  }
  
  getBasket();
