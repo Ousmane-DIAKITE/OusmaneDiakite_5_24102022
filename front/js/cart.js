@@ -13,8 +13,14 @@
     
  }
  function displayItem(item) {
+    const article = makeArticle(item)
+    displayArticle(article)
+    console.log(basket);
+    const div = makeImageDiv(item)
+    article.appendChild(div)
     
  }
+ 
 
  
  getBasket();
