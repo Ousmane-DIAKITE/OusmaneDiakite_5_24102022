@@ -126,10 +126,10 @@ function checkColors(colors) {
 
 
 //Création de l'élément bouton "Ajouter au panier"
-const button = document.querySelector("item__content__addButton");
+const button = document.querySelector(".item__content__addButton");
 
 
-console.log(button);
+console.log('button');
 
 button.addEventListener("click",addToBasket);
 
