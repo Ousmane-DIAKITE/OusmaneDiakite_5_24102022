@@ -13,19 +13,23 @@
     
  }
  function displayItem(item) {
-    const article = makeArticle(item)
-    displayArticle(article)
+    const article = makeArticle(item);
+    displayArticle(article);
     console.log(basket);
-    const div = makeImageDiv(item)
-    article.appendChild(div)
+    const div = makeImageDiv(item);
+    article.appendChild(div);
     
  }
 
  function displayArticle(article) {
-    
+    document.querySelector("#cart__items").appendChild(article);
     
  }
 
+ function makeArticle(item) {
+    
+    
+ }
  
  getBasket();
 
