@@ -24,5 +24,10 @@
     }
     
  }
+
+ function removeFormBasket(product) {
+    
+    
+ }
 getBasket();
 
