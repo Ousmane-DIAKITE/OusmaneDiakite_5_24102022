@@ -12,7 +12,7 @@
     }
  }
  
- function displayAllBasket() {
+ function addBasket() {
     let basket = getBasket();
     let foundProduct = basket.find(p => p.id == product.id);
     if (foundProduct != undefined) {
