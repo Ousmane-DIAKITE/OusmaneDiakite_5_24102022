@@ -26,7 +26,9 @@
  }
 
  function removeFormBasket(product) {
+    let basket = getBasket;
     
+
     
  }
 getBasket();
