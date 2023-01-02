@@ -31,11 +31,30 @@ function getCartProducts(allProducts) {
     displayCartProducts(cart);
 }
 
-function displayCartProducts(products) {
-    console.log(products);
-    for (let i=0; i < data.length; i++) {
+function displayCartProducts(cart) {
+    console.log(cart);
+    for (let i=0; i < cart.length; i++) {
         const sofa = data[i];
+
+
+        const article = document.createElement("article");
+        article.classList.add("cart__item");
+        article.dataset.id = cart.id;
+        article.dataset.color = cart.color;
+        console.log(cart);
         
+   
+        const divElt = document.createElement("div");
+        divElt.classList.add("cart__item__img");
+        const imgElt = document.createElement("img");
+        imgElt.src = cart.imageUrl;
+        imgElt.alt = cart.altTxt;
+        divElt.appendChild(imgElt);
+        console.log(divElt);
+        
+
+
+        /*
         // Création de l'élément "a"
         let linkProduct = document.createElement("a");
         linkProduct.href = "./product.html?id=" + sofa._id
@@ -61,6 +80,7 @@ function displayCartProducts(products) {
         let productDescription = document.createElement("p");
         productDescription.textContent = sofa.description
         productArticle.appendChild(productDescription);
+        */
         }
 }
 
