@@ -30,13 +30,42 @@ function getCartProducts(allProducts) {
     }
     displayCartProducts(cart);
 }
-
+getCartProducts();
 function displayCartProducts(cart) {
-    console.log(cart);
+   
     for (let i=0; i < cart.length; i++) {
-        const sofa = data[i];
+        console.log(cart);
+        console.log(allProducts);
 
-
+     // Insertion de l'élément "article"
+        let productArticle = document.createElement("article");
+        console.log(productArticle);
+        document.querySelector("#cart__items").appendChild(productArticle);
+        productArticle.className = "cart__item";
+        productArticle.setAttribute('data-id', cart[allProducts]._id);
+ 
+ 
+         // Insertion de l'élément "div"
+         let productDivImg = document.createElement("div");
+         productArticle.appendChild(productDivImg);
+         productDivImg.className = "cart__item__img";
+ 
+ 
+         // Insertion de l'image
+         let productImg = document.createElement("img");
+         productDivImg.appendChild(productImg);
+         productImg.src = allProducts[cart].imgProduit;
+         productImg.alt = allProducts[cart].altImgProduit;
+         console.log(productImg);
+ 
+           // Insertion de l'élément "div"
+         let productItemContent = document.createElement("div");
+         productArticle.appendChild(productItemContent);
+         productItemContent.className = "cart__item__content";
+         console.log(productItemContent);
+         
+        
+/*
         const article = document.createElement("article");
         article.classList.add("cart__item");
         article.dataset.id = cart.id;
@@ -54,11 +83,13 @@ function displayCartProducts(cart) {
         
 
 
-        /*
+     /*   
         // Création de l'élément "a"
-        let linkProduct = document.createElement("a");
-        linkProduct.href = "./product.html?id=" + sofa._id
-        document.getElementById("items").append(linkProduct);
+        let linkProduct = document.createElement("cart__item");
+        linkProduct.dataset.id = cart.id;
+        console.log(cart);
+        linkProduct.dataset.colors = item.colors;
+        document.getElementById("cart__items").append(linkProduct);
       
         // Création de l'élément "article"
         let productArticle = document.createElement("article");
@@ -67,21 +98,23 @@ function displayCartProducts(cart) {
       
         // Création de l'élément "img"
         let productImg = document.createElement("img");
-        productImg.src = sofa.imageUrl;  
-        productImg.alt = sofa.altTxt;
+        productImg.src = cart.imageUrl;  
+        productImg.alt = cart.altTxt;
         productArticle.appendChild(productImg);
       
         // Création de l'élément titre "h3"
         let productTitle = document.createElement("h3");
-        productTitle.textContent = sofa.name;
+        productTitle.textContent = cart.name;
         productArticle.appendChild(productTitle);
       
         // Création de l'élément description "p"
         let productDescription = document.createElement("p");
-        productDescription.textContent = sofa.description
+        
+        productDescription.textContent = cart.description
         productArticle.appendChild(productDescription);
         */
         }
+        
 }
 
   /*const cart = []
